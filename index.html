@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Cafe Yolo · Cafe in Vijay Nagar, Scheme 78, Indore</title>
+<meta name="description" content="Vegetarian cafe and coffee shop in Scheme 78. Big seating, long hours, food that people drive across Vijay Nagar for at midnight.">
+<link rel="stylesheet" href="style.css"></head><body>
+
+<div class="bar" id="bar"></div>
+<nav class="nav" id="nav"><div class="wrap">
+  <div class="brand">Cafe Yolo</div>
+  <div style="display:flex;align-items:center;gap:22px">
+    <a class="navlink" href="#place">The place</a>
+    <a class="navlink" href="#order">Order</a>
+    <a class="navlink" href="#book">Book a table</a>
+    <a class="btn btn-dark" id="waTop" href="#">WHATSAPP</a>
+  </div>
+</div></nav>
+
+<header class="hero">
+  <div class="hero-bg" id="heroBg"></div>
+  <div class="wrap hero-inner">
+    <div class="pill reveal">4.1 from 3,928 Google reviews · Vijay Nagar, Scheme 78</div>
+    <h1 class="reveal">A cafe that is still<br>serving at 2 AM,<br>when everyone else shut.</h1>
+    <p class="lede reveal">Vegetarian cafe and coffee shop in Scheme 78. Big seating, long hours, food that people drive across Vijay Nagar for at midnight.</p>
+    <div style="display:flex;gap:14px;flex-wrap:wrap;margin-top:26px" class="reveal">
+      <a class="btn btn-dark" href="#order">ORDER FOOD</a>
+      <a class="btn btn-line" href="#book">BOOK A TABLE</a>
+    </div>
+    <div class="scroll reveal">SCROLL</div>
+  </div>
+</header>
+
+<section id="place"><div class="wrap split">
+  <div class="reveal"><div class="eyebrow">The place</div><h2>The late-night room of Scheme 78.</h2></div>
+  <div class="reveal"><p>Prestige students, night-shift workers and post-party groups all end up here because the kitchen is still open. Around four thousand reviews, and the thing people repeat in them is the 2 AM plate.</p>
+    <ul class="facts"><li>Vegetarian cafe, coffee shop and fast food</li><li>Closes 3 AM</li><li>Large seating area</li><li>Opposite Prestige Institute, Scheme 78</li></ul>
+    <div class="stats">
+      <div><span data-count="3928">3,928</span><small>Google reviews</small></div>
+      <div><span data-count="4.1" data-dec="1">4.1</span><small>Rating</small></div>
+      <div><span>11 AM to 3 AM</span><small>Open hours</small></div>
+    </div></div>
+</div></section>
+
+<section id="menu" style="background:var(--card)"><div class="wrap">
+  <div class="eyebrow reveal">What it does well</div>
+  <h2 class="reveal">Known for</h2>
+  <div class="cards"><div class="card reveal"><h3>Late-night plates</h3><p>The reason it stays full past midnight. Reviewers keep naming the Chhole Kulche and the night food.</p></div><div class="card reveal"><h3>Coffee and shakes</h3><p>A coffee shop first, so cold coffee and shakes are the default order with a group.</p></div><div class="card reveal"><h3>Room for a group</h3><p>The seating is large enough that a table of eight is normal rather than a squeeze.</p></div></div>
+  <p class="reveal" style="color:var(--ink-soft);margin-top:18px;max-width:64ch">Prices and the full menu are the cafe's to confirm. Nothing here quotes a price.</p>
+</div></section>
+
+<section id="order"><div class="wrap split">
+  <div class="reveal"><div class="eyebrow">Order</div><h2>Order to your table.</h2>
+    <p style="color:var(--ink-soft);margin-top:16px">Write what you want and it opens as a WhatsApp message to the cafe. They confirm price and timing before anything is made.</p></div>
+  <form class="panel reveal" id="orderForm" style="padding:26px;border:1px solid var(--line);border-radius:18px;background:var(--card)">
+    <div class="field"><label for="oItems">What you want</label><textarea id="oItems" rows="3" placeholder="2 cold coffee, 1 peri peri fries, 1 pasta"></textarea></div>
+    <div class="row">
+      <div class="field"><label for="oType">Type</label><select id="oType"><option>Dine-in</option><option>Takeaway</option><option>Delivery nearby</option></select></div>
+      <div class="field"><label for="oName">Your name</label><input id="oName" placeholder="Name"></div>
+    </div>
+    <div class="field"><label for="oPhone">Phone</label><input id="oPhone" inputmode="tel" placeholder="10-digit number"></div>
+    <button class="btn btn-dark" type="submit" style="width:100%">SEND ORDER ON WHATSAPP</button>
+  </form>
+</div></section>
+
+<section id="book" style="background:var(--ink);color:var(--paper)"><div class="wrap split">
+  <div class="reveal"><div class="eyebrow" style="color:var(--accent)">Book a table</div>
+    <h2 style="color:var(--paper)">Late tables go first.</h2>
+    <p style="color:rgba(244,242,237,.72);margin-top:16px">Weekend nights after 9 PM are the busy slot. Send the date and head count and the floor team replies.</p></div>
+  <form class="panel reveal" id="bookForm">
+    <div class="row">
+      <div class="field"><label for="bDate">Date</label><input id="bDate" type="date"></div>
+      <div class="field"><label for="bTime">Time</label><input id="bTime" type="time" value="20:00"></div>
+    </div>
+    <div class="row">
+      <div class="field"><label for="bGuests">Guests</label><input id="bGuests" type="number" min="1" value="4"></div>
+      <div class="field"><label for="bSeat">Seating</label><select id="bSeat"><option>Any</option><option>Indoor</option><option>Outdoor</option><option>Corner for a group</option></select></div>
+    </div>
+    <div class="field"><label for="bName">Name</label><input id="bName" placeholder="Name"></div>
+    <button class="btn btn-dark" type="submit" style="width:100%">REQUEST THE TABLE</button>
+  </form>
+</div></section>
+
+<section id="party" style="background:var(--ink);color:var(--paper)">
+  <div class="wrap split">
+    <div class="reveal">
+      <div class="eyebrow" style="color:var(--accent)">Parties</div>
+      <h2 style="color:var(--paper)">Birthdays that run past midnight.</h2>
+      <p style="color:rgba(244,242,237,.72);margin-top:16px">Tell the cafe the occasion and head count. Cake and decoration are arranged by them, and they confirm what is possible on your date.</p>
+    </div>
+    <form class="panel reveal" id="partyForm">
+      <div class="row">
+        <div class="field"><label for="pOccasion">Occasion</label>
+          <select id="pOccasion"><option>Birthday</option><option>Anniversary</option><option>Office party</option><option>Kitty / get-together</option></select></div>
+        <div class="field"><label for="pGuests">Guests</label><input id="pGuests" type="number" min="2" value="10"></div>
+      </div>
+      <div class="field"><label for="pDate">Date</label><input id="pDate" type="date"></div>
+      <div class="field"><label>Add-ons</label>
+        <div class="checks">
+          <label><input type="checkbox" id="pCake"> Cake</label>
+          <label><input type="checkbox" id="pBalloons"> Balloons</label>
+          <label><input type="checkbox" id="pDecor"> Decoration</label>
+        </div></div>
+      <div class="field"><label for="pNote">Anything else</label><input id="pNote" placeholder="Cake message, timing, seating"></div>
+      <div class="field"><label for="pName">Your name</label><input id="pName" placeholder="Name"></div>
+      <button class="btn btn-dark" type="submit" style="width:100%">SEND PARTY ENQUIRY</button>
+    </form>
+  </div>
+</section>
+
+<section id="visit" style="background:var(--card)"><div class="wrap split">
+  <div class="reveal"><div class="eyebrow">Visit</div><h2>Scheme 78, opposite Prestige.</h2>
+    <p style="color:var(--ink-soft);margin-top:16px">65, opposite Prestige Institute, Scheme 78, Vijay Nagar, Indore 452010<br>Phone <a href="tel:+917314001123" style="border-bottom:1px solid var(--accent)">+91 731 400 1123</a>.<br>Open 11 AM to 3 AM, seven days. The late slot is the whole point.</p>
+    <div style="display:flex;gap:12px;flex-wrap:wrap;margin-top:22px">
+      <a class="btn btn-dark" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Cafe%20Yolo%20Scheme%2078%20Vijay%20Nagar%20Indore">OPEN IN MAPS</a>
+      <a class="btn btn-line" href="tel:+917314001123">CALL</a>
+    </div></div>
+  <div class="reveal"><iframe title="Map" loading="lazy" style="width:100%;height:320px;border:1px solid var(--line);border-radius:16px;filter:grayscale(.25)" src="https://maps.google.com/maps?q=Cafe%20Yolo%20Scheme%2078%20Vijay%20Nagar%20Indore&output=embed"></iframe></div>
+</div></section>
+
+<footer><div class="wrap">
+  <div class="brand">Cafe Yolo</div>
+  <p style="color:var(--ink-soft);max-width:56ch;margin-top:12px">Preview site built by DEVANSHVERSE from the public Google listing on 6 November 2026. Not an official site. Menu, prices and timings are the cafe's to confirm.</p>
+</div></footer>
+<script src="app.js" defer></script></body></html>
